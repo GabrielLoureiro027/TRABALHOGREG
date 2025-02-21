@@ -1,0 +1,29 @@
+.nav{
+    background-color: #20388E;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0px;
+}
+.ul{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.a{
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0px 4px;
+    text-decoration: none;
+}
+.img{
+    height: 100px;
+    width: auto;
+    margin: 0px 28px;
+}
+.btn{
+    background-color: #20388E;
+}
