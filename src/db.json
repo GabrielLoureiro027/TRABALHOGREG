@@ -4,20 +4,29 @@
         "nome": "TÉCNICO EM LOGÍSTICA",
         "descricao": "Proporcionar o desenvolvimento das capacidades técnicas, sociais, metodológicas e organizativas referentes ao Curso Técnico em Logística.",
         "turno":"Manhã",
-        "img": "https://admin.loja.senaies.com.br/pub/media/catalog/product//l/o/logistica__1_26.jpg"
+        "img": "https://admin.loja.senaies.com.br/pub/media/catalog/product//l/o/logistica__1_26.jpg",
+        "horas": "1200",
+        "localizacao": "Serra",
+        "modalidade": "Presencial"
     },
     {
         "id": 2,
         "nome": "TÉCNICO EM ELETROMECÂNICA",
         "descricao": "Proporcionar o desenvolvimento das capacidades técnicas, sociais, metodológicas e organizativas referentes ao Curso Técnico em Eletromecânica.",
         "turno":"Manhã",
-        "img": "https://admin.loja.senaies.com.br/pub/media/catalog/product//e/l/eletromecanica__1_19.jpg"
+        "img": "https://admin.loja.senaies.com.br/pub/media/catalog/product//e/l/eletromecanica__1_19.jpg",
+        "horas": "1200",
+        "localizacao": "Casa do caralho",
+        "modalidade": "Presencial"
     },
     {
         "id": 3,
         "nome": "TÉCNICO EM INSTRUMENTAÇÃO",
         "descricao": "Proporcionar o desenvolvimento das capacidades técnicas, sociais, metodológicas e organizativas referentes ao Curso Técnico em Logística instrumentação",
         "turno":"Manhã",
-        "img": "https://admin.loja.senaies.com.br/pub/media/catalog/product//i/n/instrumentista_1.png"
+        "img": "https://admin.loja.senaies.com.br/pub/media/catalog/product//i/n/instrumentista_1.png",
+        "horas": "1200",
+        "localizacao": "Aracruz",
+        "modalidade": "Semi-prencial"
     }
 ]}
