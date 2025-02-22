@@ -1,17 +1,32 @@
 import React from "react";
-import style from '../Css/PropsCards.module.css'
+import style from "../Css/PropsCards.module.css";
+import { useNavigate } from "react-router-dom";
 
-// Agora o PropsCard recebe as props
-const PropsCard = ({ img, nome, descricao, modalidade, localizacao, horas }) => {
+const PropsCard = ({
+  id,
+  img,
+  nome,
+  descricao,
+  modalidade,
+  localizacao,
+  horas,
+}) => {
+
+  const navigate = useNavigate(); 
+
+  const irParaDetalhes = () => {
+    navigate(`/detalhes/${id}`);
+  };
+
   return (
-    <div>
+    <div id="props" className={style.props}>
       <div id="card" className={style.card}>
-        <img src={img} alt='' className={style.foto}/>
+        <img src={img} alt="" className={style.foto} />
         <h2 className={style.titulo}>{nome}</h2>
         <p>{horas} horas</p>
         <p>{modalidade}</p>
         <p>{localizacao}</p>
-        <button className={style.btn}>Visualizar</button>
+        <button className={style.btn} onClick={irParaDetalhes}>Visualizar</button>
       </div>
     </div>
   );

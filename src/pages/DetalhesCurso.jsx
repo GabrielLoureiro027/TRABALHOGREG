@@ -1,9 +1,11 @@
 import React from 'react'
+import PropsDetalhesCurso from '../props/PropsDetalhesCurso'
 
 const DetalhesCurso = () => {
   return (
     <div>
-      Deta
+      <PropsDetalhesCurso/>
+      teste
     </div>
   )
 }

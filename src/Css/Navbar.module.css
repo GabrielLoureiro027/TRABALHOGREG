@@ -16,8 +16,12 @@
     border: none;
     color: white;
     cursor: pointer;
-    padding: 0px 4px;
+    margin: 0px 4px;
     text-decoration: none;
+    transition: border-bottom 0.3s ease;
+}
+.a:hover{
+    border-bottom: solid 1px white;
 }
 .img{
     height: 100px;

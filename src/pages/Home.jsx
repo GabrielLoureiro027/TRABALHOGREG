@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <div className={style.ajeitar}>
       {cursos.map((curso) => (
-        <PropsCard 
-          img={curso.img}
+        <PropsCard
           key={curso.id}
+          img={curso.img}
           nome={curso.nome}
           modalidade={curso.modalidade}
           localizacao={curso.localizacao}
@@ -29,15 +29,13 @@ const Home = () => {
 
 export default Home;
 
-
-
-
-
-{/* <Card style={{ width: '18rem' }} key={curso.id}>
+{
+  /* <Card style={{ width: '18rem' }} key={curso.id}>
 <Card.Img variant="top" src={curso.img} />
 <Card.Body>
   <Card.Title>{curso.nome}</Card.Title>
   <Card.Text maxlength='60'>{curso.descricao}</Card.Text>
   <Button variant=""className={style.btn}>Go somewhere</Button>
 </Card.Body>
-</Card> */}
+</Card> */
+}
