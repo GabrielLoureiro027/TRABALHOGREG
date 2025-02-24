@@ -11,8 +11,7 @@ const PropsCard = ({
   localizacao,
   horas,
 }) => {
-
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const irParaDetalhes = () => {
     navigate(`/detalhes/${id}`);
@@ -26,7 +25,10 @@ const PropsCard = ({
         <p>{horas} horas</p>
         <p>{modalidade}</p>
         <p>{localizacao}</p>
-        <button className={style.btn} onClick={irParaDetalhes}>Visualizar</button>
+        <button className={style.btn} onClick={irParaDetalhes}>
+          Visualizar
+        </button>
+        <a href={`/detalhes/${id}`}>vai</a>
       </div>
     </div>
   );

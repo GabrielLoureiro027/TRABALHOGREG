@@ -5,7 +5,6 @@ const DetalhesCurso = () => {
   return (
     <div>
       <PropsDetalhesCurso/>
-      teste
     </div>
   )
 }

@@ -9,8 +9,8 @@ const MyRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [{ path: "/", element: <Home /> },
-      {path:'/cadastros', element: <Cadastro />},
+    children: [{ path: "/", element: <Cadastro /> },
+      {path:'/home', element: <Home />},
       {path:'/historia', element:<History />},
       {path:'/detalhes/:id', element:<DetalhesCurso />}]
   }

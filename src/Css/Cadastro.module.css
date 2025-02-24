@@ -1,0 +1,20 @@
+.ajeitar{
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 390px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+.label{
+    display: flex;
+    justify-content: end;
+    gap: 2em;
+}
+input{
+    gap: 2em;
+    outline: none;
+}
