@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import db from "../db.json";
+import db from "../data/db.json";
 import style from "../Css/Home.module.css";
 import PropsCard from "../props/PropsCard";
 

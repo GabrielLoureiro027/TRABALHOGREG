@@ -6,7 +6,6 @@ const PropsCard = ({
   id,
   img,
   nome,
-  descricao,
   modalidade,
   localizacao,
   horas,
@@ -28,7 +27,6 @@ const PropsCard = ({
         <button className={style.btn} onClick={irParaDetalhes}>
           Visualizar
         </button>
-        <a href={`/detalhes/${id}`}>vai</a>
       </div>
     </div>
   );

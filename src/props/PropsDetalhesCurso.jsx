@@ -2,6 +2,7 @@ import React from 'react'
 
 const PropsDetalhesCurso = ({id,img,nome,descricao, turno,horas,localizacao,modalidade}) => {
   return (
+    
     <div>
         <img src={img} alt="" key={id}/>
       <h1>{nome}</h1>

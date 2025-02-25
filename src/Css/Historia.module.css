@@ -1,0 +1,6 @@
+.ajeitar{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 490px;
+    flex-direction: column;
+}

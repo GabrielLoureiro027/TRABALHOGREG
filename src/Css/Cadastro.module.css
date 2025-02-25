@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     margin: 120px 390px;
+    flex-direction: column;
 }
 .container{
     display: flex;
@@ -11,7 +12,8 @@
 }
 .label{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    margin-right: 475px;
     gap: 2em;
 }
 input{

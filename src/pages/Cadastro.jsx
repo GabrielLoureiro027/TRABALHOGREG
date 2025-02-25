@@ -1,10 +1,11 @@
 import React from "react";
-import home from "../Css/Home.module.css";
 import cd from "../Css/Cadastro.module.css";
+import titulo from '../Css/Titulos.module.css'
 
 const Cadastro = () => {
   return (
-    <div className={home.ajeitar}>
+    <div className={cd.ajeitar}>
+      <h1 className={titulo.titulos}>Cadastro</h1>
       <form action="" className={cd.container}>
         <label htmlFor="" className={cd.label}>
           <span>Nome</span>
