@@ -1,6 +1,7 @@
 import React from "react";
 import style from "../Css/PropsCards.module.css";
 import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const PropsCard = ({
   id,
@@ -10,6 +11,7 @@ const PropsCard = ({
   localizacao,
   horas,
 }) => {
+  
   const navigate = useNavigate();
 
   const irParaDetalhes = () => {
