@@ -5,7 +5,7 @@ import titulo from '../Css/Titulos.module.css'
 const Cadastro = () => {
   return (
     <div className={cd.ajeitar}>
-      <h1 className={titulo.titulos}>Cadastro</h1>
+      <h1 className={titulo.titulos}>Login</h1>
       <form action="" className={cd.container}>
         <label htmlFor="" className={cd.label}>
           <span>Nome</span>

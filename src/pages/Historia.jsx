@@ -31,8 +31,21 @@ const Historia = () => {
         desde a formação inicial até cursos de aperfeiçoamento técnico e
         superior.
       </p>
+      <div id="video" className={historia.video}>
+      <iframe 
+          width="560" 
+          height="315" 
+          src="https://youtu.be/tFGD1F68bs8?si=czt3YPhvcUfPZOhT" 
+          title="YouTube video player" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowFullScreen
+        ></iframe>
+      </div>
     </div>
   );
 };
 
 export default Historia;
+
+// src="https://www.youtube.com/embed/dQw4w9WgXcQ" 

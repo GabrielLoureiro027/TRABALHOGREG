@@ -1,7 +1,7 @@
 .ajeitar{
     display: flex;
     justify-content: space-around;
-    margin: 120px 390px;
+    margin: 0px 390px;
     flex-direction: column;
 }
 .container{
@@ -9,6 +9,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 12px;
+    margin: 120px 0px;
 }
 .label{
     display: flex;

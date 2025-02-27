@@ -4,3 +4,8 @@
     margin: 30px 490px;
     flex-direction: column;
 }
+.video{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}

@@ -4,9 +4,17 @@
     background-color: #20388E;
     height: 70px;
     align-items: center;
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .link{
+    padding: 2px 5px;
     text-decoration: none;
     color: white;
+    transition: background-color,color 0.3s ease;
+    border-radius: 20px;
+}
+.link:hover{
+    color: #F1AC11;
 }

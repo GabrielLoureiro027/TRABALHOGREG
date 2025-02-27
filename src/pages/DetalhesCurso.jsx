@@ -1,34 +1,37 @@
-import React from 'react'
-import PropsDetalhesCurso from '../props/PropsDetalhesCurso'
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom'; 
+import PropsDetalhesCurso from '../props/PropsDetalhesCurso';
 
 const DetalhesCurso = () => {
+    const { id } = useParams(); 
+    const [curso, setCurso] = useState(null); 
 
-    const [cursos, SetCursos] = useState([]);
-    
-      useEffect(() => {
-          async function fetchCursos () {
-            //busca os dados da api
-            const res = await fetch('http://localhost:5000/cursos')
-            //Convetendo a resposta para json
+    useEffect(() => {
+        async function fetchCurso() {
+            const res = await fetch(`http://localhost:5000/cursos/${id}`);
             const data = await res.json();
-            //Atualiza a variavel de estado cursos com os dados da api
-            SetCursos(data);
-            console.log(cursos);
-          }
-          fetchCursos();
-      })
+            setCurso(data); 
+        }
 
-  return (
-    <div>
-      <PropsDetalhesCurso
-      key={cursos.id}
-      img={cursos.img}
-      nome={cursos.nome}
-      modalidade={cursos.modalidade}
-      localizacao={cursos.localizacao}
-      horas={cursos.horas}/>
-    </div>
-  )
-}
+        fetchCurso();
+    }, [id]); 
+    return (
+        <div>
+            {curso ? (
+                <PropsDetalhesCurso
+                    key={curso.id}
+                    img={curso.img}
+                    nome={curso.nome}
+                    modalidade={curso.modalidade}
+                    localizacao={curso.localizacao}
+                    horas={curso.horas}
+                    descricao={curso.descricao} 
+                />
+            ) : (
+                <p>Carregando...</p> 
+            )}
+        </div>
+    );
+};
 
-export default DetalhesCurso
+export default DetalhesCurso;
