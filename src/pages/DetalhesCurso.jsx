@@ -28,7 +28,7 @@ const DetalhesCurso = () => {
                     descricao={curso.descricao} 
                 />
             ) : (
-                <p>Carregando...</p> 
+                <p>tESTE</p> 
             )}
         </div>
     );
